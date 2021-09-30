@@ -1,3 +1,5 @@
+class MyException(Exception):
+    pass
 def foo():
     print('1..')
     foo2()
@@ -11,6 +13,6 @@ def foo3():
     foo4()
  
 def foo4():
-    raise Exception('!!!Ошибка!!!')
+    raise MyException('!!!Ошибка!!!')
  
 foo()
